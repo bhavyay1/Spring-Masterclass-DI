@@ -9,9 +9,12 @@ public class SpringCore {
         ApplicationContext apc = new ClassPathXmlApplicationContext("application_properties.xml");  // IOC -
 
         Person person  = (Person)apc.getBean("helloBean");
-        person.setName("ABCD");
-        person.passMyMsg("INDIA");
-        System.out.println("-->"+person.getName());
+       // person.setName("ABCD");
+       // person.passMyMsg("INDIA");
+       System.out.println("-->"+person);
+
+
+        person.display();
     }
 }
 
